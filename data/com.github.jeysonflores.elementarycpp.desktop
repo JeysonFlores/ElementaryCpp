@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=ElementaryCpp
+GenericName=ElementaryCpp
+Comment=It's just a template
+Categories=Utility;
+Exec=com.github.jeysonflores.elementarycpp
+Icon=com.github.jeysonflores.elementarycpp
+Terminal=false
+Type=Application
+X-GNOME-Gettext-Domain=com.github.jeysonflores.elementarycpp
+Keywords=Utility;
