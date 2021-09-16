@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright (c) 2021 Jeyson Antonio Flores Deras (https://github.com/JeysonFlores/hasher) -->
+<!-- Copyright (c) 2021 Jeyson Antonio Flores Deras (https://github.com/JeysonFlores/ElementaryCpp) -->
 <component type="desktop">
 	<id>com.github.jeysonflores.elementarycpp</id>
 	<metadata_license>CC0-1.0</metadata_license>
@@ -7,7 +7,7 @@
 	<name>ElementaryCpp</name>
 	<summary>It's just a template</summary>
 	<description>
-		ElementaryCpp
+		<p>An app that helps you figure out whether or not to do something.</p>
 	</description>
 	<provides>
 		<binary>com.github.jeysonflores.elementarycpp</binary>

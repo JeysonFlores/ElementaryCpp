@@ -1,0 +1,106 @@
+{
+    "app-id": "com.github.jeysonflores.elementarycpp",
+    "runtime": "io.elementary.Platform",
+    "runtime-version": "6",
+    "sdk": "io.elementary.Sdk",
+    "command": "com.github.jeysonflores.elementarycpp",
+    "finish-args": ["--share=ipc", "--socket=fallback-x11", "--socket=fallback-x11" ],
+    "build-options" : {
+        "cflags": "-O2 -g",
+        "cxxflags": "-O2 -g",
+        "env": {
+            "V": "1"
+        }
+    },
+    "cleanup": ["/include", "/lib/*/include", "/lib/pkgconfig", "/share/pkgconfig", "/share/aclocal", "/man", "/share/man", "/share/info", "/share/gtk-doc", "*.la", "*.a" ],
+    "modules": [
+        {
+           "name": "mm-common",
+           "cleanup": [ "/" ],
+           "sources": [
+               {
+                   "type": "archive",
+                   "url": "http://ftp.gnome.org/pub/GNOME/sources/mm-common/0.9/mm-common-0.9.9.tar.xz",
+                   "sha256": "9d00bc77e77794e0bd2ae68132c4b4136aa115d255e34b310f7449b29db50b7a"
+               }
+           ]
+        },
+        {
+            "name": "sigc++",
+            "config-opts": [ "--disable-documentation" ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://ftp.gnome.org/pub/GNOME/sources/libsigc++/2.9/libsigc++-2.9.3.tar.xz",
+                    "sha256": "0bf9b301ad6198c550986c51150a646df198e8d1d235270c16486b0dda30097f"
+                }
+            ]
+        },
+        {
+            "name": "glibmm",
+            "config-opts": [ "--disable-documentation" ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://ftp.gnome.org/pub/GNOME/sources/glibmm/2.60/glibmm-2.60.1.tar.xz",
+                    "sha256": "9f5c0ad88d5202b921a90dbfb9bd4782b61ce468eeedbd9ad22258c9e2e33c80"
+                }
+            ]
+        },
+        {
+            "name": "cairomm",
+            "config-opts": [ "--disable-documentation" ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://cairographics.org/releases/cairomm-1.12.0.tar.gz",
+                    "sha256": "50435aec6fdd976934b791e808993160113ad19ca53a5634a9b64ccbe55874cc"
+                }
+            ]
+        },
+        {
+            "name": "pangomm",
+            "config-opts": [ "--disable-documentation" ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://ftp.gnome.org/pub/GNOME/sources/pangomm/2.38/pangomm-2.38.1.tar.xz",
+                    "sha256": "effb18505b36d81fc32989a39ead8b7858940d0533107336a30bc3eef096bc8b"
+                }
+            ]
+        },
+        {
+            "name": "atkmm",
+            "config-opts": [ "--disable-documentation" ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://ftp.gnome.org/pub/GNOME/sources/atkmm/2.24/atkmm-2.24.2.tar.xz",
+                    "sha256": "ff95385759e2af23828d4056356f25376cfabc41e690ac1df055371537e458bd"
+                }
+            ]
+        },
+        {
+            "name": "gtkmm",
+            "config-opts": [ "--disable-documentation" ],
+            "build-options" : { "cxxflags": "-O2 -g -std=c++17" },
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://ftp.gnome.org/pub/GNOME/sources/gtkmm/3.18/gtkmm-3.18.0.tar.xz",
+                    "sha256": "829fa113daed74398c49c3f2b7672807f58ba85d0fa463f5bc726e1b0138b86b"
+                }
+            ]
+        },        
+        {
+            "name": "elementarycpp",
+            "sources": [
+                {
+                    "type": "dir",
+                    "path": "."
+                }
+            ],
+            "buildsystem": "meson"      
+        }
+    ]
+}
