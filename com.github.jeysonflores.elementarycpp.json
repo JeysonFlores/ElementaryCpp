@@ -4,7 +4,12 @@
     "runtime-version": "6",
     "sdk": "io.elementary.Sdk",
     "command": "com.github.jeysonflores.elementarycpp",
-    "finish-args": ["--share=ipc", "--socket=fallback-x11", "--socket=fallback-x11" ],
+    "finish-args": [
+        "--share=ipc",
+        "--socket=fallback-x11",
+        "--socket=fallback-x11" ,
+        "--system-talk-name=org.freedesktop.Accounts"
+    ],
     "build-options" : {
         "cflags": "-O2 -g",
         "cxxflags": "-O2 -g",
@@ -91,7 +96,7 @@
                     "sha256": "829fa113daed74398c49c3f2b7672807f58ba85d0fa463f5bc726e1b0138b86b"
                 }
             ]
-        },        
+        },
         {
             "name": "elementarycpp",
             "sources": [
@@ -100,7 +105,7 @@
                     "path": "."
                 }
             ],
-            "buildsystem": "meson"      
+            "buildsystem": "meson"
         }
     ]
 }

@@ -11,9 +11,10 @@ subdir('data')
 
 executable(
 	meson.project_name(),
-	['src/Application.cpp', 'src/MainWindow.cpp', ['src/MainWindow.h']],
+	['src/Application.cpp', 'src/MainWindow.cpp', ['src/Application.h', 'src/MainWindow.h']],
 	dependencies: [
 		dependency('gtkmm-3.0'),
+		dependency('granite'),
 	],
 	install: true
 )
