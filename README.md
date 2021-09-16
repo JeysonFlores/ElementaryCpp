@@ -4,6 +4,7 @@ ElementaryCpp is a template for eOS applications, meaning that it's built over G
 
 # Features
  - GSchema Support
+ - ElementaryOS 6 Dark Mode Support (thanks to [@davidmhewitt](https://github.com/davidmhewitt))
  - Flatpak Manifest Example
  
  # Build & Run
