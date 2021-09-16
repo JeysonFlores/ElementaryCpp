@@ -9,7 +9,7 @@ ElementaryCpp is a template for eOS applications, meaning that it's built over G
  # Build & Run
  ```
 git clone https://github.com/JeysonFlores/ElementaryCpp
-cd ElementaryLua
+cd ElementaryCpp
 flatpak-builder build com.github.jeysonflores.elementarycpp.json --user --install --force-clean
 flatpak run com.github.jeysonflores.elementarycpp
  ```
