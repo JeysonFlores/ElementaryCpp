@@ -16,7 +16,7 @@ jobs:
     - uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@v3
       with:
         bundle: ElementaryCpp.flatpak
-        manifest-path: com.github.yourusername.elementarycpp.json
+        manifest-path: com.github.jeysonflores.elementarycpp.json
 
         run-tests: true
 
