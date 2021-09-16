@@ -20,11 +20,11 @@ bool MainWindow::on_delete_event (GdkEventAny* event) {
 }
 
 void MainWindow::on_gtkmm_button_clicked() {
-    std::system("xdg-open https://www.gtkmm.org/en/");
+    Gio::AppInfo::launch_default_for_uri("https://www.gtkmm.org/en/");
 }
 
 void MainWindow::on_edocs_button_clicked() {
-    std::system("xdg-open https://docs.elementary.io/develop/");
+    Gio::AppInfo::launch_default_for_uri("https://docs.elementary.io/develop/");
 }
 
 MainWindow::MainWindow() {
