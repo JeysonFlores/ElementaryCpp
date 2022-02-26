@@ -2,19 +2,17 @@
 
 #include <gtkmm.h>
 
-class MainWindow : public Gtk::ApplicationWindow
-{
+class MainWindow : public Gtk::ApplicationWindow {
 public:
-	MainWindow();
-	void on_gtkmm_button_clicked();
-	void on_edocs_button_clicked();
-	bool on_delete_event (GdkEventAny* event) override;
-	
+    MainWindow();
+    void on_gtkmm_button_clicked();
+    bool on_delete_event(GdkEventAny* event) override;
+
 private:
-	Gtk::Label title;
-	Gtk::Label subtitle;
-	Gtk::Button gtkmm_button;
-	Gtk::Button edocs_button;
-	Gtk::HeaderBar headerbar;
-	Gtk::Box box;
+    Gtk::Label m_title;
+    Gtk::Label m_subtitle;
+    Gtk::Button m_gtkmm_button;
+    Gtk::Button m_edocs_button;
+    Gtk::HeaderBar m_headerbar;
+    Gtk::Box m_box;
 };
